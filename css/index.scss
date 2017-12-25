@@ -1,0 +1,263 @@
+body {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+
+.main-block {
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .btn-enter {
+        position: absolute;
+        top:150px;
+        left:45%;
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        line-height: 50px;
+        text-align: center;
+        color:#fff;
+        z-index: 10;
+        
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 10;
+    }
+}
+.slide-show {
+
+    margin-top: 50px;
+}
+.main-content {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    height: 100vh;
+    @media(min-width:992px) {
+        display: flex;
+    }
+    
+    
+    
+    
+}
+.main-block-1, .main-block-2{
+    padding: 10%;
+}
+.main-block-1 {
+    @media(min-width:992px) {
+        border-right:1px solid black;
+    }
+    
+}
+.main-block-2 {
+    @media(min-width:992px) {
+        border-left:1px solid black;
+    }
+}
+.mini-img{
+    display:none;
+    img{
+        width: 10%;
+        height: 100px;
+                
+    }
+    margin: 0;
+    position:absolute;
+    bottom:0;
+    z-index: 2;
+}
+.carousel-inner{
+    padding: 0;
+}
+.btn-show-mini-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom:0;
+    left:-50px;
+}
+.btn-hide-mini-slide{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom:100px;
+    left:-50px;
+}
+
+.main {
+    font-family:Arial;
+    width:500px;
+    display:block;
+    margin:0 auto;
+  }
+  h3 {
+      background: #fff;
+      color: #3498db;
+      font-size: 36px;
+      line-height: 100px;
+      margin: 10px;
+      padding: 2%;
+      position: relative;
+      text-align: center;
+  }
+  .action{
+    display:block;
+    margin:100px auto;
+    width:100%;
+    text-align:center;
+  }
+  .action{
+a {
+    display:inline-block;
+    padding:5px 10px; 
+    background:hsl(12, 100%, 50%);
+    color:#fff;
+    text-decoration:none;
+  }
+  } 
+  .action a:hover{
+    background:#000;
+}
+
+/* Slider style*/
+.slider {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px; 
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    @media(max-width:992px) {
+        width: 90%;
+    }
+    @media(max-width:992px) and (orientation:portrait) {
+        margin-top: 20vh;
+        
+    }
+}
+.slide{
+    position: relative;
+    z-index: 6;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+   cursor: grab;
+    img{
+        z-index: 3;
+        width: 100%;
+        
+    }
+    .hover-img{
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 5;
+    }
+    &:hover {
+        .hover-img {
+            display: block;
+            
+        }
+    }
+
+}
+.slider-nav{
+    width: 100%;
+    margin: 0 auto; 
+    position: absolute;
+    bottom:0;
+    left:0;
+    opacity: 0;
+    margin: 0 2px;
+    
+    
+    img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .slide{
+        background-color: #fff;
+        padding: 3px;
+        margin: 0 2px;
+        border-radius:5px;
+        &:hover {
+            background-color:red 
+        }
+    }
+    .slick-current{
+        background-color:red;
+        
+    }
+}
+
+.slider-block {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top:0;
+    opacity: 0;
+    height: 100vh;
+    background-color: #000;
+    @media(max-width:992px) {
+        top:0;
+    }
+}
+.btn-show-mini-slide{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    bottom:75px;
+    left:1%;
+    color:#fff;
+    cursor: pointer;
+    background:transparent;
+    
+}
+.btn-hide-mini-slide{
+    display: none;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    bottom:120px;
+    left:1%;
+    color:#fff;
+    cursor: pointer;
+    background:transparent;
+}
+
+.fa-times{
+    position: absolute;
+    top:50px;
+    right: 2%;
+    cursor: pointer;
+    z-index: 10;
+    color:#fff;
+    font-size: 20px;
+}
+
+.slider-title{
+    color:#fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top:0;
+    background-color: rgba(0,0,0, .5)
+}

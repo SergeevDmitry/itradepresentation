@@ -1,60 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <title>Progress Bar</title>
-   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-   <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Slide show</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://use.fontawesome.com/1e92cea265.js"></script>
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div id="preloader">
         <div class="dws-progress-bar"></div>
     </div>
-    
-    <!-- Content Start -->
-    <div class="container">
-        <a href="https://ibb.co/fRdOqR"><img src="https://preview.ibb.co/jXYCjm/1.jpg" alt="1" border="0"></a>
-        <a href="https://ibb.co/m6v3qR"><img src="https://preview.ibb.co/eQgyPm/2.jpg" alt="2" border="0"></a>
-        <a href="https://ibb.co/cr81c6"><img src="https://preview.ibb.co/hFCSH6/3.jpg" alt="3" border="0"></a>
-        <a href="https://ibb.co/nukQ4m"><img src="https://preview.ibb.co/jCiCjm/4.jpg" alt="4" border="0"></a>
-        <a href="https://ibb.co/dR2SH6"><img src="https://preview.ibb.co/bFs54m/5.jpg" alt="5" border="0"></a>
-        <a href="https://ibb.co/gHQKVR"><img src="https://preview.ibb.co/fkqmAR/6.jpg" alt="6" border="0"></a>
-        <a href="https://ibb.co/irYTPm"><img src="https://preview.ibb.co/daCzVR/7.jpg" alt="7" border="0"></a>
-        <a href="https://ibb.co/d0tTPm"><img src="https://preview.ibb.co/gqeeVR/8.jpg" alt="8" border="0"></a>
-        <a href="https://ibb.co/eojrc6"><img src="https://preview.ibb.co/fLKPx6/9.jpg" alt="9" border="0"></a>
-        <a href="https://ibb.co/fqErc6"><img src="https://preview.ibb.co/ifz2jm/10.jpg" alt="10" border="0"></a>
-        <a href="https://ibb.co/ks0KVR"><img src="https://preview.ibb.co/mQbtqR/11.jpg" alt="11" border="0"></a>
-        <a href="https://ibb.co/ehPPx6"><img src="https://preview.ibb.co/j6Urc6/12.jpg" alt="12" border="0"></a>
-        <a href="https://ibb.co/mJQWc6"><img src="https://preview.ibb.co/erueVR/13.jpg" alt="13" border="0"></a>
-        <a href="https://ibb.co/hL0xH6"><img src="https://preview.ibb.co/mKCoPm/14.jpg" alt="14" border="0"></a>
-        <a href="https://ibb.co/knNYqR"><img src="https://preview.ibb.co/hD3HH6/15.jpg" alt="15" border="0"></a>
-        <a href="https://ibb.co/bBAKVR"><img src="https://preview.ibb.co/myaWc6/16.jpg" alt="16" border="0"></a>
-        <a href="https://ibb.co/j3cNjm"><img src="https://preview.ibb.co/emGtqR/17.jpg" alt="17" border="0"></a>
-        <a href="https://ibb.co/joyjx6"><img src="https://preview.ibb.co/g6vWc6/18.jpg" alt="18" border="0"></a>
-        <a href="https://ibb.co/jLNBc6"><img src="https://preview.ibb.co/ewJjx6/19.jpg" alt="19" border="0"></a>
-        <a href="https://ibb.co/e0Erc6"><img src="https://preview.ibb.co/fYpPx6/20.jpg" alt="20" border="0"></a>
-        <a href="https://ibb.co/hyTHH6"><img src="https://preview.ibb.co/ikm4x6/21.jpg" alt="21" border="0"></a>
-        <a href="https://ibb.co/cUBtqR"><img src="https://preview.ibb.co/cEkxH6/22.jpg" alt="22" border="0"></a>
-        <a href="https://ibb.co/cEWF4m"><img src="https://preview.ibb.co/kMdv4m/23.jpg" alt="23" border="0"></a>
-        <a href="https://ibb.co/jy9rc6"><img src="https://preview.ibb.co/bOu2jm/24.jpg" alt="24" border="0"></a>
-        <a href="https://ibb.co/eM8TPm"><img src="https://preview.ibb.co/doYv4m/25.jpg" alt="25" border="0"></a>
-        <a href="https://ibb.co/dhNYqR"><img src="https://preview.ibb.co/izj2jm/26.jpg" alt="26" border="0"></a>
-        <a href="https://ibb.co/dkgRAR"><img src="https://preview.ibb.co/hVB4x6/27.jpg" alt="27" border="0"></a>
-        <a href="https://ibb.co/kqrhjm"><img src="https://preview.ibb.co/cNKrc6/28.jpg" alt="28" border="0"></a>
-        <a href="https://ibb.co/dhgtqR"><img src="https://preview.ibb.co/cJXzVR/29.jpg" alt="29" border="0"></a>
-        <a href="https://ibb.co/g69Px6"><img src="https://preview.ibb.co/iekxH6/30.jpg" alt="30" border="0"></a>
-        <a href="https://ibb.co/ftwtqR"><img src="https://preview.ibb.co/dDcNjm/31.jpg" alt="31" border="0"></a>
-        <a href="https://ibb.co/je1hjm"><img src="https://preview.ibb.co/kS2Bc6/32.jpg" alt="32" border="0"></a>
-        <a href="https://ibb.co/i1CBc6"><img src="https://preview.ibb.co/jnVxH6/33.jpg" alt="33" border="0"></a>
-        <a href="https://ibb.co/io58Pm"><img src="https://preview.ibb.co/e4KDqR/34.jpg" alt="34" border="0"></a>
-        <a href="https://ibb.co/n56RAR"><img src="https://preview.ibb.co/iMLWc6/35.jpg" alt="35" border="0"></a>
-        <a href="https://ibb.co/bvMF4m"><img src="https://preview.ibb.co/gS9eVR/36.jpg" alt="36" border="0"></a>
-        <a href="https://ibb.co/fJTHH6"><img src="https://preview.ibb.co/hr4rc6/37.jpg" alt="37" border="0"></a>
-        <a href="https://ibb.co/gDFKVR"><img src="https://preview.ibb.co/iX9eVR/38.jpg" alt="38" border="0"></a>
-        <a href="https://ibb.co/hGkKVR"><img src="https://preview.ibb.co/msoHH6/39.jpg" alt="39" border="0"></a>
-        <a href="https://ibb.co/kURhjm"><img src="https://preview.ibb.co/d2urc6/40.jpg" alt="40" border="0"></a>
+
+
+    <div class="wrapper">
+        <div class="main-block">
+            <img src="img/steklo.jpg" alt="" class="main-img">
+            <a href="#" class="btn-enter">Войти</a>
+            <div class="main-content">
+                <div class="main-block-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam dicta deserunt vel rem. Nisi quod
+                        unde dolorum distinctio amet.</p>
+                    <a href="#" class="slide-show">Слайд шоу</a>
+                </div>
+                <div class="main-block-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam dicta deserunt vel rem. Nisi quod
+                        unde dolorum distinctio amet.</p>
+                    <a href="#" class="slide-show">Слайд шоу</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="slider-block">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <div class="slider">
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/1.jpg" alt="" class="slider-img">
+                    <img src="./img/slider/1-1.jpg" alt="" class="hover-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/2.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/3.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/4.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/5.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/6.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/7.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/8.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/9.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/10.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/11.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/12.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/13.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/14.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slide">
+                    <div class="slider-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore.
+                    </div>
+                    <img src="./img/slider/15.jpg" alt="" class="slider-img">
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slide">
+                    <img src="./img/slider/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/6.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/7.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/8.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/9.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/10.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/11.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/12.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/13.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/14.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/slider/15.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="btn-show-mini-slide">
+                <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="btn-hide-mini-slide">
+                <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+            </div>
+
+        </div>
     </div>
-<script src="js/plugin.js"></script>
-<script src="js/script.js"></script>
+
+
+    <script src="./slick/slick.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: false,
+                asNavFor: '.slider-nav',
+                autoplay: true,
+
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                asNavFor: '.slider',
+                focusOnSelect: true,
+                arrows: false,
+                focusOnSelect: true,
+                centerMode: true,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    }
+
+                ]
+            });
+        })
+
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('.btn-show-mini-slide').click(function () {
+                $(this).hide();
+                $('.slider-nav').show().css('opacity', '1').addClass('animated fadeInUp');
+                $('.btn-hide-mini-slide').show().addClass('animated fadeInUp');
+            })
+            $('.btn-hide-mini-slide').click(function () {
+                $(this).hide();
+                $('.slider-nav').hide();
+                $('.btn-show-mini-slide').show()
+            })
+
+        })
+
+    </script>
+    <script>
+        $('body').keydown(function (e) {
+            if (e.keyCode === 37) $('.slick-prev').click();
+            else if (e.keyCode === 39) $('.slick-next').click()
+        })
+        $('.slider-img').click(function () {
+            $('.slick-next').click()
+        })
+    </script>
+    <script>
+        $('.btn-enter ').click(function () {
+            $(this).hide();
+            $('.main-img').addClass('animated fadeOutUp');
+
+        })
+    </script>
+    <script>
+        $('.slide-show').click(function () {
+            $('.main-block').hide()
+            $('.slider-block').css('opacity', '1')
+
+        })
+    </script>
+    <script>
+        $('.fa-times').click(function () {
+            $('.slider-block').css('opacity', '0');
+            $('.main-block').show();
+            $('.btn-enter ').hide();
+            $('.main-img').hide()
+        })
+    </script>
 </body>
-</html>    
+
+</html>
