@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightgallery.css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./css/lg-transitions.css">
 </head>
@@ -124,13 +123,92 @@
 
             </div>
 
-
+            <div id="lightgallery-light">
+                    <a href="img/slider-white/w-1.png" class="first-slide">
+                        <img src="./img/slider-white/prev/1.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-2.png">
+                        <img src="./img/slider-white/prev/2.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-3.png">
+                        <img src="./img/slider-white/prev/3.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-4.png">
+                        <img src="./img/slider-white/prev/4.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-5.png">
+                        <img src="./img/slider-white/prev/5.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-6.png">
+                        <img src="./img/slider-white/prev/6.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-7.png">
+                        <img src="./img/slider-white/prev/7.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-8.png">
+                        <img src="./img/slider-white/prev/8.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-9.png">
+                        <img src="./img/slider-white/prev/9.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-10.png">
+                        <img src="./img/slider-white/prev/10.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-11.png">
+                        <img src="./img/slider-white/prev/11.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-12.png">
+                        <img src="./img/slider-white/prev/12.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-13.png">
+                        <img src="./img/slider-white/prev/13.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-14.png">
+                        <img src="./img/slider-white/prev/14.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-15.png">
+                        <img src="./img/slider-white/prev/15.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-16.png">
+                        <img src="./img/slider-white/prev/16.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-17.png">
+                        <img src="./img/slider-white/prev/17.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-18.png">
+                        <img src="./img/slider-white/prev/18.png" alt="">
+                    </a>
+    
+                    <a href="img/slider-white/w-19.png">
+                        <img src="./img/slider-white/prev/19.png" alt="">
+                    </a>
+    
+    
+    
+                </div>
         </div>
 
         <script src="js/plugin.js"></script>
         <script src="js/script.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+
         <script src="js/lightgallery-all.min.js"></script>
         <script src="js/jquery.mousewheel.min.js"></script>
 
@@ -196,11 +274,19 @@
 
             $('.slide-show-light').click(function () {
                 $('#lightgallery-light').lightGallery({
-                    thumbnail: true
+                    thumbnail: true,
+                    preload: 18,
+                    mode: 'lg-fade',
+                    showAfterLoad: true,
+                    share: false,
+                    counter: false,
+                    download: false
                 });
+                $('.first-slide').click();
+                $('.lg-autoplay-button, .lg-fullscreen').hide()
+                $('#lg-zoom-in').hide()
+                $('.lg-backdrop').css('background-color', '#fff')
 
-                $('.first-slide-light').click();
-                $('.lg-backdrop').css('background-color', '#fff');
 
             })
 
