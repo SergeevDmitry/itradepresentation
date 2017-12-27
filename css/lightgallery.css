@@ -161,7 +161,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background:transparent;
 }
 .lg-toolbar .lg-icon {
   color: #999;
@@ -471,9 +471,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-autoplay-button:after {
+  display: none;
   content: "\e01d";
 }
 .lg-show-autoplay .lg-autoplay-button:after {
+  display: none;
   content: "\e01a";
 }
 
@@ -517,21 +519,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 #lg-zoom-in:after {
-  content: "\e311";
+  display: none;
+  
 }
 
 #lg-actual-size {
+  display: none;
   font-size: 20px;
 }
 #lg-actual-size:after {
+  display: none;
   content: "\e033";
 }
 
 #lg-zoom-out {
+  display: none;
   opacity: 0.5;
   pointer-events: none;
 }
 #lg-zoom-out:after {
+  display: none;
   content: "\e312";
 }
 .lg-zoomed #lg-zoom-out {
@@ -620,9 +627,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-fullscreen:after {
+  display: none;
   content: "\e20c";
 }
 .lg-fullscreen-on .lg-fullscreen:after {
+  display: none;
   content: "\e20d";
 }
 
