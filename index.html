@@ -328,7 +328,10 @@
                         showAfterLoad: true,
                         share: false,
                         counter: false,
-                        download: false
+                        download: false,
+                        appendSubHtmlTo : ".lg-subsub-html",
+                        mousewheel: false,
+                        showThumbByDefault: false
                     });
 
                     $('#lightgallery-light .first-slide').click();
@@ -338,9 +341,14 @@
                 });
             });
 
-            $('#lightgallery-dark').on('onBeforeSlide.lg',function(event, index, fromTouch, fromThumb){
+            $('#lightgallery-dark, #lightgallery-light').on('onBeforeSlide.lg',function(event, index, fromTouch, fromThumb){
                 $(".slide-description").show();
             });
+
+            $('#lightgallery-dark').on('onCloseAfter.lg',function(event, index, fromTouch, fromThumb){
+                $(".slide-description").hide();
+            });
+
 
             $(".slide-description").click( function() {
                 if ( $(".lg-current .hint").hasClass("hint-visible") ) {
