@@ -1,0 +1,332 @@
+body {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    /* overflow:hidden; */
+}
+.wrapper{
+    position: relative;
+    
+}
+.notebooks-block{
+    display:flex;
+    width: 100%;
+    img{
+        width: 90%;
+    }
+}
+
+.main-block {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    .btn-enter {
+        position: absolute;
+        top:500px;
+        left:45%;
+        display: block;
+        width: 174px;
+        height: 80px;
+        border-radius: 40px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        border: solid 2px #ffffff;
+        line-height: 80px;
+        text-align: center;
+        color:#fff;
+        z-index: 10;
+        text-decoration: none;
+        font-size: 36px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        
+    }
+    img {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: 10;
+    }
+}
+.slide-show {
+
+    margin-top: 50px;
+}
+.title{
+    position: absolute;
+    top:280px;
+    left:50%;
+    margin-left: -220px;
+    z-index: 10;
+    font-size: 72px;
+    color:#fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    /* position: absolute;
+    top: 0;
+    z-index: 5; */
+    height: 100vh;
+    width: 100%;
+    
+    @media(min-width:992px) {
+        display: flex;
+    }
+}
+.main-block-1, .main-block-2{
+    padding: 323px 5% 50px 5%;
+    
+    img{
+        width:100%;
+        min-width:550px
+    }
+    a{
+        margin-top: -120px;
+    }
+}
+.main-block-1 {
+    background-image: linear-gradient(45deg, to right, #e5e7ec, rgba(220, 222, 231, 0));
+    
+}
+
+.main-block-2 {
+    background-image: linear-gradient(to bottom, #202434, rgba(0, 0, 0, 0.5)), linear-gradient(#1d1f25, #1d1f25);
+    
+}
+
+.logo{
+    position: absolute;
+    width: 202px;
+    height: 222px;
+    left:50%; 
+    margin-left:-101px;
+    border-radius: 0 0 8px 8px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+    border: solid 1px #e2e2e2;
+    img {
+        width: 109px;
+        height: 105px;
+        margin-top: 34px;
+    }
+    p{
+        font-size: 26px;
+        font-weight: 600;
+        color: #3454d1;
+        margin-bottom: 32px;
+    }
+}
+.btn-color{
+    display:block;
+    width: 177px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #3454d1;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    text-decoration: none;
+    margin: 0 auto;
+    
+}
+.mini-img{
+    display:none;
+    img{
+        width: 10%;
+        height: 100px;
+                
+    }
+    margin: 0;
+    position:absolute;
+    bottom:0;
+    z-index: 2;
+}
+.carousel-inner{
+    padding: 0;
+}
+.btn-show-mini-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom:0;
+    left:-50px;
+}
+.btn-hide-mini-slide{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom:100px;
+    left:-50px;
+}
+
+.main {
+    font-family:Arial;
+    width:500px;
+    display:block;
+    margin:0 auto;
+  }
+  h3 {
+      background: #fff;
+      color: #3498db;
+      font-size: 36px;
+      line-height: 100px;
+      margin: 10px;
+      padding: 2%;
+      position: relative;
+      text-align: center;
+  }
+  .action{
+    display:block;
+    margin:100px auto;
+    width:100%;
+    text-align:center;
+  }
+  .action{
+a {
+    display:inline-block;
+    padding:5px 10px; 
+    background:hsl(12, 100%, 50%);
+    color:#fff;
+    text-decoration:none;
+  }
+  } 
+  .action a:hover{
+    background:#000;
+}
+
+/* Slider style*/
+.slider {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px; 
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    @media(max-width:992px) {
+        width: 90%;
+    }
+    @media(max-width:992px) and (orientation:portrait) {
+        margin-top: 20vh;
+        
+    }
+}
+.slide{
+    position: relative;
+    z-index: 6;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+   cursor: grab;
+    img{
+        z-index: 3;
+        width: 100%;
+        
+    }
+    .hover-img{
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 5;
+    }
+    &:hover {
+        .hover-img {
+            display: block;
+            
+        }
+    }
+
+}
+.slider-nav{
+    width: 100%;
+    margin: 0 auto; 
+    position: absolute;
+    bottom:0;
+    left:0;
+    opacity: 0;
+    margin: 0 2px;
+    
+    
+    img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .slide{
+        background-color: #fff;
+        padding: 3px;
+        margin: 0 2px;
+        border-radius:5px;
+        &:hover {
+            background-color:red 
+        }
+    }
+    .slick-current{
+        background-color:red;
+        
+    }
+}
+
+.slider-block {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top:0;
+    opacity: 0;
+    height: 100vh;
+    background-color: #000;
+    @media(max-width:992px) {
+        top:0;
+    }
+}
+.btn-show-mini-slide{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    bottom:75px;
+    left:1%;
+    color:#fff;
+    cursor: pointer;
+    background:transparent;
+    
+}
+.btn-hide-mini-slide{
+    display: none;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    bottom:120px;
+    left:1%;
+    color:#fff;
+    cursor: pointer;
+    background:transparent;
+}
+
+.fa-times{
+    position: absolute;
+    top:50px;
+    right: 2%;
+    cursor: pointer;
+    z-index: 10;
+    color:#fff;
+    font-size: 20px;
+}
+
+.slider-title{
+    color:#fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top:0;
+    background-color: rgba(0,0,0, .5)
+}
