@@ -350,17 +350,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #999;
   cursor: pointer;
   font-size: 24px;
-  height: 39px;
+  height: 56px;
   line-height: 27px;
-  padding: 5px 0;
+  padding: 12px 0;
   position: absolute;
   left: 20px;
   text-align: center;
-  top: -39px;
-  width: 50px;
+  top: -49px;
+  width: 62px;
 }
 .lg-outer .lg-toogle-thumb:after {
-  content: "\e1ff";
+  content:  url('../img/show-prev.svg' );
+  width: 24px;
+  height: 24px;
 }
 .lg-outer .lg-toogle-thumb:hover {
   color: #FFF;
