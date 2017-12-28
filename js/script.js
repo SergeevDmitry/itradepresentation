@@ -12,7 +12,7 @@ $(document).ready(function () {
         dBody.css('overflow', 'hidden');
 
         $(".dws-progress-bar").circularProgress({
-            color: "#25ffe4",
+            color: "#3849C6",
             line_width: 17,
             height: "350px",
             width: "350px",
