@@ -337,3 +337,11 @@ img.hint {
   max-width: 100%;
     max-height: 100%;
 }
+
+.no-blur {
+  filter: blur(0px)!important;
+  -webkit-filter: blur(0px)!important;
+  -moz-filter: blur(0px)!important; 
+  -o-filter: blur(0px)!important; 
+  -ms-filter: blur(0px)!important; 
+}
