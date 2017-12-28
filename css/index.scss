@@ -327,7 +327,12 @@ img.hint {
   /* box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); */
 }
 
+.slide-description-b {
+  content: url('../img/icon-info-b.svg');
+  
+}
 .slide-description-w {
+  content: url('../img/icon-info-w.svg');
   width: 45px;
   height: 45px;
   top: 7px;
@@ -337,3 +342,5 @@ img.hint {
   max-width: 100%;
     max-height: 100%;
 }
+
+
