@@ -322,20 +322,22 @@ img.hint {
   height: 38px;
   z-index: 15000000;
   border-radius:50%;
+  text-align: center;
+  line-height: 38px;
   cursor: pointer;
   background-color: transparent;
   /* box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); */
 }
 
 .slide-description-b {
-  content: url('../img/icon-info-b.svg');
+  color:#fff;
+  background-color: #3B404D;
   
 }
 .slide-description-w {
-  content: url('../img/icon-info-w.svg');
-  width: 45px;
-  height: 45px;
-  top: 7px;
+  
+  color:#525763;
+  background-color: #EBEEF3;
 }
 
 .lg-outer .lg-image{
