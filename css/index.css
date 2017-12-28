@@ -1,313 +1,36 @@
-@font-face {
-  font-family: AvenirNext-Bold;
-  src: url("../fonts/AvenirNext-DemiBold.ttf"); }
-@font-face {
-  font-family: AvenirNext-Regular;
-  src: url("../fonts/AvenirNext-Regular.ttf"); }
-body {
-  font-family: "AvenirNext-Regular";
-  z-index: 1;
-  width: 100%;
-  overflow-x: hidden; }
+/*
+Error: Invalid CSS after "...6787bf3d53328b3": expected "{", was ""
+        on line 357 of /home/andrey/Work/iTrade/css/index.scss
 
-.wrapper {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  right: 0;
-  margin: 0 auto;
-  overflow: hidden; }
-  @media (orientation: portrait) {
-    .wrapper {
-      overflow-y: hidden; } }
+352:   -moz-filter: blur(0px)!important; 
+353:   -o-filter: blur(0px)!important; 
+354:   -ms-filter: blur(0px)!important; 
+355: }
+356: >>>>>>> b62be05a9c134b365eab25e726787bf3d53328b3
 
-.main-block {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  top: 0;
-  z-index: 1;
-  text-align: center; }
-  .main-block .btn-enter {
-    position: absolute;
-    top: 500px;
-    left: 50%;
-    margin-left: -90px;
-    display: block;
-    width: 174px;
-    height: 80px;
-    border-radius: 40px;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    border: solid 2px #ffffff;
-    line-height: 80px;
-    text-align: center;
-    color: #fff;
-    z-index: 10;
-    text-decoration: none;
-    font-size: 36px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
-    @media (max-width: 992px) and (orientation: landscape) {
-      .main-block .btn-enter {
-        top: 50vh; } }
-    @media (max-width: 992px) and (orientation: portrait) {
-      .main-block .btn-enter {
-        top: 52vh; } }
-  .main-block img {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    z-index: 10; }
-  .main-block .main-img {
-    width: 100%;
-    min-width: 1920px;
-    min-height: 1000px; }
-
-.slide-show {
-  margin-top: 50px; }
-
-.title {
-  position: absolute;
-  top: 280px;
-  left: 50%;
-  margin-left: -220px;
-  z-index: 10;
-  font-size: 72px;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(0, 0, 0, 0.5); }
-  @media (max-width: 992px) and (orientation: landscape) {
-    .title {
-      top: 20vh; } }
-  @media (max-width: 992px) and (orientation: portrait) {
-    .title {
-      top: 40vh; } }
-
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 0;
-  z-index: 5;
-  top: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  background: url("../img/back.png");
-  background-size: 100% 100vh;
-  background-repeat: no-repeat;
-  -webkit-filter: blur(7px);
-          filter: blur(7px); }
-  @media (max-width: 992px) {
-    .content {
-      display: block; } }
-
-.main-block-1,
-.main-block-2 {
-  padding: 280px 5% 50px 5%;
-  min-height: 30vh; }
-  .main-block-1 img,
-  .main-block-2 img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    cursor: pointer; }
-  .main-block-1 a,
-  .main-block-2 a {
-    margin-top: -120px; }
-    @media (min-width: 992px) and (max-width: 1310px) {
-      .main-block-1 a,
-      .main-block-2 a {
-        margin-top: -50px; } }
-
-@media (max-width: 992px) {
-  .main-block-1 {
-    background: #fff; } }
-@media (max-width: 992px) and (orientation: portrait) {
-  .main-block-1 {
-    padding-top: 5vh;
-    height: 45vh; } }
-@media (max-width: 992px) and (orientation: landscape) {
-  .main-block-1 {
-    height: 100vh;
-    padding: 10vh 5% 0 5%; } }
-
-@media (max-width: 992px) {
-  .main-block-2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#202434), to(rgba(0, 0, 0, 0.5))), -webkit-gradient(linear, left top, left bottom, from(#1d1f25), to(#1d1f25));
-    background-image: linear-gradient(to bottom, #202434, rgba(0, 0, 0, 0.5)), linear-gradient(#1d1f25, #1d1f25); } }
-@media (max-width: 992px) and (orientation: portrait) {
-  .main-block-2 {
-    padding-top: 5vh;
-    height: 45vh; } }
-@media (max-width: 992px) and (orientation: landscape) {
-  .main-block-2 {
-    height: 100vh;
-    padding: 10vh 5% 0 5%; } }
-
-.logo {
-  position: absolute;
-  width: 202px;
-  height: 222px;
-  left: 50%;
-  margin-left: -101px;
-  border-radius: 0 0 8px 8px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-  border: solid 1px #e2e2e2; }
-  .logo img {
-    width: 109px;
-    height: 105px;
-    margin-top: 34px; }
-  .logo p {
-    font-size: 26px;
-    font-weight: 600;
-    color: #3454d1;
-    margin-top: 20px; }
-  @media (max-width: 992px) {
-    .logo {
-      display: none; } }
-
-.btn-color {
-  font-family: "AvenirNext-Bold";
-  font-weight: 600;
-  display: block;
-  width: 177px;
-  height: 58px;
-  border-radius: 29px;
-  background-color: #3454d1;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-  line-height: 58px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 26px;
-  text-decoration: none;
-  margin: 0 auto; }
-  @media (max-width: 1310px) {
-    .btn-color {
-      margin-top: 130px; } }
-
-.mini-img {
-  display: none;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  z-index: 2; }
-  .mini-img img {
-    width: 10%;
-    height: 100px; }
-
-.carousel-inner {
-  padding: 0; }
-
-.btn-show-mini-img {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  position: absolute;
-  bottom: 0;
-  left: -50px; }
-
-.btn-hide-mini-slide {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  position: absolute;
-  bottom: 100px;
-  left: -50px; }
-
-.main {
-  font-family: Arial;
-  width: 500px;
-  display: block;
-  margin: 0 auto; }
-
-h3 {
-  background: #fff;
-  color: #3498db;
-  font-size: 36px;
-  line-height: 100px;
-  margin: 10px;
-  padding: 2%;
-  position: relative;
-  text-align: center; }
-
-.action {
-  display: block;
-  margin: 100px auto;
-  width: 100%;
-  text-align: center; }
-
-.action a {
-  display: inline-block;
-  padding: 5px 10px;
-  background: #ff3300;
-  color: #fff;
-  text-decoration: none; }
-
-.action a:hover {
-  background: #000; }
-
-.lightgallery {
-  position: absolute; }
-  .lightgallery img {
-    width: 100px; }
-
-.mini-img {
-  width: 100px; }
-
-#lightgallery-dark {
-  position: absolute;
-  display: none; }
-
-#lightgallery-light {
-  position: absolute;
-  display: none; }
-  #lightgallery-light .lg-backdrop {
-    background: #fff; }
-
-img.hint {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2147483647;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
-  width: auto !important;
-  height: auto !important; }
-
-.slide-description-b, .slide-description-w {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 50px;
-  width: 38px;
-  height: 38px;
-  z-index: 15000000;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: transparent;
-  /* box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); */ }
-
-.slide-description-b {
-  content: url("../img/icon-info-b.svg"); }
-
-.slide-description-w {
-  content: url("../img/icon-info-w.svg");
-  width: 45px;
-  height: 45px;
-  top: 7px; }
-
-.lg-outer .lg-image {
-  max-width: 100%;
-  max-height: 100%; }
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+/home/andrey/Work/iTrade/css/index.scss:357
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/share/koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/usr/share/koala/bin/sass:18:in `load'
+/usr/share/koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...6787bf3d53328b3\": expected \"{\", was \"\"\A         on line 357 of /home/andrey/Work/iTrade/css/index.scss\A \A 352:   -moz-filter: blur(0px)!important; \A 353:   -o-filter: blur(0px)!important; \A 354:   -ms-filter: blur(0px)!important; \A 355: }\A 356: >>>>>>> b62be05a9c134b365eab25e726787bf3d53328b3"; }
