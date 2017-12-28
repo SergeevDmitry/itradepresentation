@@ -282,7 +282,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #363B47;
+  background-color: rgba(54, 59, 71, .75);
   bottom: 0;
   position: absolute;
   width: 100%;
