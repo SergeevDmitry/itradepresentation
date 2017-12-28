@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon info</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-15.8%" y="-15.8%" width="131.6%" height="131.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="presentation-scr-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1328.000000, -12.000000)">
+        <g id="icon-info" filter="url(#filter-1)" transform="translate(1332.000000, 16.000000)">
+            <circle id="Oval-10" fill="#ECEFF4" cx="19" cy="19" r="19"></circle>
+            <g id="Group-2" transform="translate(17.000000, 11.000000)" fill="#4F5461">
+                <rect id="Rectangle-3" x="0" y="6" width="4" height="11" rx="2"></rect>
+                <rect id="Rectangle-3" x="0" y="0" width="4" height="4" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

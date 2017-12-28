@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <img class="slide-description" src="img/details.svg">
+    <img class="slide-description-b slide-description" src="img/icon-info-b.svg">
+    <img class="slide-description-w slide-description" src="img/icon-info-w.svg">
     <div id="preloader">
         <div class="dws-progress-bar"></div>
     </div>
@@ -391,16 +392,31 @@
                     $('#lightgallery-light .first-slide').click();
                     $('.lg-autoplay-button, .lg-fullscreen').hide()
                     $('#lg-zoom-in').hide()
-                    $('.lg-backdrop').css('background-color', '#fff')
+                    $('.lg-backdrop').css('background-color', '#E1E5EF')
+                    $('.lg-thumb-outer').css('background-color', '#E1E5EF')
+                    $('.lg-thumb-outer').css('box-shadow', '0px 0px 17px 0px rgba(0,0,0,0.75)')
+                    $('.lg-toogle-thumb').css('background-color', '#fff')
+                    $('.lg-toogle-thumb:after').css('content',  'url("../img/show-prev.svg" )')
+                    $('.lg-close').addClass('lg-close-white')
+                    
+                    $('.lg-toogle-thumb').css('box-shadow', '0px 0px 17px 0px rgba(0,0,0,0.75)')
                 });
             });
 
-            $('#lightgallery-dark, #lightgallery-light').on('onBeforeSlide.lg',function(event, index, fromTouch, fromThumb){
-                $(".slide-description").show();
+            $('#lightgallery-dark').on('onBeforeSlide.lg',function(event, index, fromTouch, fromThumb){
+                $(".slide-description-b").show();
             });
 
             $('#lightgallery-dark').on('onCloseAfter.lg',function(event, index, fromTouch, fromThumb){
-                $(".slide-description").hide();
+                $(".slide-description-b").hide();
+            });
+
+            $('#lightgallery-light').on('onBeforeSlide.lg',function(event, index, fromTouch, fromThumb){
+                $(".slide-description-w").show();
+            });
+
+            $('#lightgallery-light').on('onCloseAfter.lg',function(event, index, fromTouch, fromThumb){
+                $(".slide-description-w").hide();
             });
 
 
