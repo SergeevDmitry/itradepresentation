@@ -26,7 +26,6 @@ $(document).ready(function () {
             img_copy.src        = document.images[i].src;
             img_copy.onload     = img_load;
             img_copy.onerror    = img_load;
-            console.log(img_copy)
         }
 
         function img_load () {
@@ -41,6 +40,4 @@ $(document).ready(function () {
     } else {
         preloader.remove();
     }
-
-
 });
