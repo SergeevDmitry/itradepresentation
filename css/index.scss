@@ -326,6 +326,7 @@ img.hint {
   line-height: 38px;
   cursor: pointer;
   background-color: transparent;
+  box-shadow: 0px 6px 24px -5px rgba(0,0,0,0.75);
   /* box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); */
 }
 
@@ -354,3 +355,10 @@ img.hint {
   -ms-filter: blur(0px)!important; 
 }
 
+.lg-close-shadow {
+  box-shadow: 0px 6px 24px -5px rgba(0,0,0,0.75);
+  border-radius:50%;
+  width: 38px !important;
+  height: 38px;
+  margin-right: 5px;
+}
