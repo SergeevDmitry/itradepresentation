@@ -30,7 +30,7 @@ body {
   text-align: center; }
   .main-block .btn-enter {
     position: absolute;
-    top: 500px;
+    top: 45vh;
     left: 50%;
     margin-left: -90px;
     display: block;
@@ -68,19 +68,16 @@ body {
 
 .title {
   position: absolute;
-  top: 280px;
-  left: 50%;
-  margin-left: -220px;
+  top: 30vh;
+  width: 100%;
+  text-align: center;
   z-index: 10;
   font-size: 72px;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(0, 0, 0, 0.5); }
-  @media (max-width: 992px) and (orientation: landscape) {
+  @media (max-width: 992px) {
     .title {
       top: 20vh; } }
-  @media (max-width: 992px) and (orientation: portrait) {
-    .title {
-      top: 40vh; } }
 
 .content {
   display: -webkit-box;
@@ -104,7 +101,7 @@ body {
 
 .main-block-1,
 .main-block-2 {
-  padding: 280px 5% 50px 5%;
+  padding: 0 5% 50px 5%;
   min-height: 30vh; }
   .main-block-1 img,
   .main-block-2 img {
@@ -189,6 +186,16 @@ body {
   @media (max-width: 1310px) {
     .btn-color {
       margin-top: 130px; } }
+  @media (max-width: 992px) {
+    .btn-color {
+      display: none; } }
+
+.cont {
+  margin-top: 30vh;
+  max-height: 100vh; }
+  @media (max-width: 992px) {
+    .cont {
+      margin-top: 5vh; } }
 
 .mini-img {
   display: none;

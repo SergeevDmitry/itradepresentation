@@ -42,7 +42,7 @@
     <div class="wrapper">
         <div class="main-block">
             <img src="img/start-img.png" alt="" class="main-img">
-            <p class="title">iTrade Design</p>
+            <div class="title">iTrade Design</div>
             <a href="#" class="btn-enter">Open</a>
 
             <div class="content">
@@ -51,12 +51,18 @@
                     <p>iTrade</p>
                 </div>
                 <div class="main-block-1">
-                    <img src="img/macbook-white.png" alt="" class="slide-show-light">
-                    <a href="#" class="btn-color slide-show-light">Light</a>
+                    <div class="cont">
+                            <img src="img/macbook-white.png" alt="" class="slide-show-light">
+                            <a href="#" class="btn-color slide-show-light btn">Light</a>
+                    </div>
+                    
                 </div>
                 <div class="main-block-2">
-                    <img src="img/macbook-black.png" alt="" class="slide-show-black">
-                    <a href="#" class="btn-color slide-show-black">Dark</a>
+                    <div class="cont">
+                            <img src="img/macbook-black.png" alt="" class="slide-show-black">
+                            <a href="#" class="btn-color slide-show-black btn">Dark</a>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -453,6 +459,21 @@
                 }
             });
 
+             /*  $(".slide-description").click( function() {
+                if ( $(".lg-current .hint").hasClass("hint-visible") ) {
+                    console.log($(".lg-current img").last().attr("src"));
+                    $(".lg-current .hint").hide().removeClass("hint-visible");
+                } else {
+                    $(".lg-current .hint").show().addClass("hint-visible");
+                }
+            });
+
+            
+            $('#lightgallery-light').on('onBeforeSlide.lg',function(event, index, fromTouch, fromThumb){
+                if(event.currentTarget.children[index].children('.hint')) {
+                    $('.slide-description-w').css('opacity' ,'1')
+                }
+            }); */
             
         </script>
 

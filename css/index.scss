@@ -37,7 +37,7 @@ body {
   text-align: center;
   .btn-enter {
     position: absolute;
-    top: 500px;
+    top: 45vh;
     
     left: 50%;
     margin-left: -90px;
@@ -79,20 +79,18 @@ body {
 }
 .title {
   position: absolute;
-  top: 280px;
+  top:30vh; 
+  width: 100%;
+  text-align: center;
   
-  left: 50%;
-  margin-left: -220px;
   z-index: 10;
   font-size: 72px;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.23), 0 2px 4px rgba(0, 0, 0, 0.5);
-  @media (max-width: 992px) and (orientation: landscape) {
-    top: 20vh;
+  @media(max-width:992px) {
+    top:20vh; 
   }
-  @media(max-width:992px) and (orientation: portrait){
-    top: 40vh;
-  }
+  
 }
 
 .content {
@@ -114,7 +112,7 @@ body {
 }
 .main-block-1,
 .main-block-2 {
-  padding: 280px 5% 50px 5%;
+  padding: 0 5% 50px 5%;
   min-height: 30vh;
   img {
     width: auto;
@@ -209,7 +207,17 @@ body {
   @media (max-width: 1310px) {
     margin-top: 130px;
   }
+  @media (max-width: 992px) {
+    display:none;
+  }
   
+}
+.cont {
+  margin-top: 30vh;
+  max-height: 100vh;
+  @media(max-width:992px) {
+    margin-top: 5vh;
+  }
 }
 .mini-img {
   display: none;
