@@ -35,6 +35,9 @@ $(document).ready(function () {
                 preloader.delay(400).fadeOut('slow');
                 dBody.css('overflow', '');
             }
+            if(progress>100) {
+                progress===100
+            }
             $(".dws-progress-bar").circularProgress('animate', progress, 500);
         }
     } else {
