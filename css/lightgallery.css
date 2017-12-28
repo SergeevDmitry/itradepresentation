@@ -190,6 +190,10 @@
   
   /* box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); */
 }
+.lg-toogle-thumb-w {
+  content: url('../img/show-prev-w.svg');
+  
+}
 .lg-close-white {
   content: url('../img/icon-close-w.svg');
   cursor: pointer;
@@ -366,7 +370,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 24px;
   height: 56px;
   line-height: 27px;
-  padding: 12px 0;
+  padding: 16px 0 12px 0;
   position: absolute;
   left: 20px;
   text-align: center;
@@ -376,8 +380,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-toogle-thumb:after {
   content:  url('../img/show-prev.svg' );
-  width: 24px;
-  height: 24px;
+  
 }
 .lg-outer .lg-toogle-thumb:hover {
   color: #FFF;
