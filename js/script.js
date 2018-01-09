@@ -34,10 +34,13 @@ $(document).ready(function () {
             if (progress === 100 || loadedImg == imagesCount) {
                 preloader.delay(400).fadeOut('slow');
                 dBody.css('overflow', '');
-                $('.wrapper').css('display', 'block');
+               
             }
             
             $(".dws-progress-bar").circularProgress('animate', progress, 500);
+            $('.wrapper').animate({
+                opacity: 1
+            }, 3000);
         }
     } else {
         preloader.remove();
