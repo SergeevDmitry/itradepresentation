@@ -46,6 +46,9 @@ body {
     @media (max-width: 992px) and (orientation: landscape) {
       top: 15vh;
     }
+    @media  (min-width: 905px) and (max-width: 992px)  {
+      top: 35vh !important;
+    }
   }
   .title {
     z-index: 10;
