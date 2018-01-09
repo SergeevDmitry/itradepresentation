@@ -10,7 +10,7 @@ $(document).ready(function () {
     if (imagesCount >= imgSum && imagesCount > 0) {
         preloader.css('background', '#fff');
         dBody.css('overflow', 'hidden');
-
+        
         $(".dws-progress-bar").circularProgress({
             color: "#3849C6",
             line_width: 17,
@@ -31,13 +31,11 @@ $(document).ready(function () {
         function img_load () {
             progress += percent;
             loadedImg++;
-            if (progress >= 100 || loadedImg == imagesCount) {
+            if (progress === 100 || loadedImg == imagesCount) {
                 preloader.delay(400).fadeOut('slow');
                 dBody.css('overflow', '');
             }
-            if(progress>100) {
-                progress===100
-            }
+            
             $(".dws-progress-bar").circularProgress('animate', progress, 500);
         }
     } else {

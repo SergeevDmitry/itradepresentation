@@ -42,8 +42,11 @@
     <div class="wrapper">
         <div class="main-block">
             <img src="img/start-img.png" alt="" class="main-img">
-            <div class="title">iTrade Design</div>
-            <a href="#" class="btn-enter">Open</a>
+            <div class="title-block">
+                <div class="title">iTrade Design</div>
+                <a href="#" class="btn-enter">Open</a>
+            </div>
+            
 
             <div class="content">
                 <div class="logo">
@@ -51,17 +54,17 @@
                     <p>iTrade</p>
                 </div>
                 <div class="main-block-1">
-                    <div class="cont">
+                    
                             <img src="img/macbook-white.png" alt="" class="slide-show-light">
                             <a href="#" class="btn-color slide-show-light btn">Light</a>
-                    </div>
+                    
                     
                 </div>
                 <div class="main-block-2">
-                    <div class="cont">
+                   
                             <img src="img/macbook-black.png" alt="" class="slide-show-black">
                             <a href="#" class="btn-color slide-show-black btn">Dark</a>
-                    </div>
+                    
                     
                 </div>
             </div>
@@ -369,13 +372,14 @@
 
                             done: function() {
                                 $(".content").addClass("no-blur");
+                                $('.title-block').css('display', 'none');
                             }
                         });
 
                         setTimeout(
                             function () {
                                 $('.main-img').addClass('animated fadeOutUp')
-                                $('.wrapper').css('overflow-y', 'auto');
+                                /* $('.wrapper').css('overflow-y', 'auto'); */
                             }, 2000);
 
                     }, 1500);
