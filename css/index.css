@@ -55,8 +55,7 @@ body {
     width: 174px;
     height: 80px;
     border-radius: 40px;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border: solid 2px #ffffff;
     line-height: 80px;
     text-align: center;
@@ -85,8 +84,6 @@ body {
   margin-top: 50px; }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0;
@@ -97,8 +94,7 @@ body {
   background: url("../img/back.png");
   background-size: 100% 100vh;
   background-repeat: no-repeat;
-  -webkit-filter: blur(7px);
-          filter: blur(7px); }
+  filter: blur(7px); }
   @media (max-width: 992px) and (orientation: portrait) {
     .content {
       display: block; } }
@@ -150,7 +146,6 @@ body {
 
 @media (max-width: 992px) {
   .main-block-2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#202434), to(rgba(0, 0, 0, 0.5))), -webkit-gradient(linear, left top, left bottom, from(#1d1f25), to(#1d1f25));
     background-image: linear-gradient(to bottom, #202434, rgba(0, 0, 0, 0.5)), linear-gradient(#1d1f25, #1d1f25); }
     .main-block-2 img {
       margin-top: 10%; } }
@@ -171,8 +166,7 @@ body {
   margin-left: -101px;
   border-radius: 0 0 8px 8px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
   border: solid 1px #e2e2e2; }
   .logo img {
     width: 109px;
@@ -184,6 +178,21 @@ body {
     color: #3454d1;
     margin-top: 20px; }
   @media (max-height: 800px) {
+    .logo {
+      width: 150px;
+      height: 130px;
+      left: 50%;
+      margin-left: -75px; }
+      .logo img {
+        width: 60px;
+        height: 60px;
+        margin-top: 14px; }
+      .logo p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #3454d1;
+        margin-top: 15px; } }
+  @media (max-width: 1450px) {
     .logo {
       width: 150px;
       height: 130px;
@@ -210,8 +219,7 @@ body {
   height: 58px;
   border-radius: 29px;
   background-color: #3454d1;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04);
   line-height: 58px;
   text-align: center;
   color: #ffffff;
@@ -225,12 +233,6 @@ body {
     .btn-color {
       display: none; } }
 
-/* .cont {
-  max-height: 100vh !important;
-  @media (max-width: 992px) {
-    margin-top: 5vh;
-  }
-} */
 .mini-img {
   display: none;
   margin: 0;
@@ -318,8 +320,7 @@ img.hint {
   left: 50%;
   top: 50%;
   z-index: 2147483647;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
   width: auto !important;
@@ -339,9 +340,12 @@ img.hint {
   line-height: 38px;
   cursor: pointer;
   background-color: transparent;
-  -webkit-box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75);
-  /* box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); */ }
+  display: 24px;
+  box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75); }
+  @media (max-width: 992px) {
+    .slide-description-b,
+    .slide-description-w {
+      line-height: 40px; } }
 
 .slide-description-b {
   color: #fff;
@@ -363,8 +367,7 @@ img.hint {
   -ms-filter: blur(0px) !important; }
 
 .lg-close-shadow {
-  -webkit-box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
   width: 38px !important;
   height: 38px;
